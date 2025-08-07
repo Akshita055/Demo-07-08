@@ -2,49 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Beautiful HTML Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beige Calculator</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <h2 style="text-align:center;">Calculator</h2>
+  <div class="calculator">
+    <input type="text" id="display" class="display" readonly />
 
-  <table align="center" border="1" cellpadding="10" cellspacing="0" style="border-radius:10px; background-color:#f2f2f2;">
-    <tr>
-      <td colspan="4" style="text-align:right; padding:20px; font-size:24px;">
-        <input type="text" id="display" style="width:100%; font-size:24px;" readonly>
-      </td>
-    </tr>
-    <tr>
-      <td><button>7</button></td>
-      <td><button>8</button></td>
-      <td><button>9</button></td>
-      <td><button>/</button></td>
-    </tr>
-    <tr>
-      <td><button>4</button></td>
-      <td><button>5</button></td>
-      <td><button>6</button></td>
-      <td><button>*</button></td>
-    </tr>
-    <tr>
-      <td><button>1</button></td>
-      <td><button>2</button></td>
-      <td><button>3</button></td>
-      <td><button>-</button></td>
-    </tr>
-    <tr>
-      <td><button>0</button></td>
-      <td><button>.</button></td>
-      <td><button>=</button></td>
-      <td><button>+</button></td>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <button style="width:100%; background-color:#ff5252; color:white;">C</button>
-      </td>
-    </tr>
-  </table>
-<script src = "script.js"
+    <div class="buttons">
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="operator">÷</button>
+
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button class="operator">×</button>
+
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button class="operator">−</button>
+
+      <button>0</button>
+      <button>.</button>
+      <button class="equal">=</button>
+      <button class="operator">+</button>
+
+      <button class="clear">C</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

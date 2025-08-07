@@ -1,10 +1,6 @@
-// Get the display input
 const display = document.getElementById('display');
-
-// Get all the buttons
 const buttons = document.querySelectorAll('button');
 
-// Add click events to each button
 buttons.forEach(button => {
   button.addEventListener('click', () => {
     const value = button.textContent;
@@ -13,7 +9,6 @@ buttons.forEach(button => {
       display.value = '';
     } else if (value === '=') {
       try {
-        // Replace special symbols with real operators
         const expression = display.value
           .replace(/÷/g, '/')
           .replace(/×/g, '*')

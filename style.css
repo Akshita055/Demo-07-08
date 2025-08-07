@@ -1,4 +1,3 @@
-/* Reset and base styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,93 +6,53 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #d0eafc, #fdfdff);
+  background: linear-gradient(135deg, #f3e9dc, #e9d5c7);
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Calculator container with glassmorphism effect */
 .calculator {
-  backdrop-filter: blur(20px);
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: 30px;
-  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.15);
+  background: #fff8f0;
+  border: 2px solid #e2cfc3;
+  border-radius: 25px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   padding: 35px;
   width: 320px;
-  transition: 0.3s ease-in-out;
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* Display styling */
 .display {
   width: 100%;
-  height: 70px;
-  border: none;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 15px;
-  padding: 15px;
-  font-size: 28px;
-  color: #2c2c2c;
-  text-align: right;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  height: 60px;
+  font-size: 26px;
+  padding: 10px 15px;
   margin-bottom: 25px;
+  border: none;
+  border-radius: 15px;
+  background-color: #f6eee3;
+  text-align: right;
+  color: #4e342e;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.05);
   outline: none;
 }
 
-/* Grid layout for buttons */
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
+  gap: 15px;
 }
 
-/* Button base style */
 button {
-  height: 65px;
-  font-size: 22px;
+  height: 60px;
+  font-size: 20px;
   border: none;
-  border-radius: 18px;
-  background-color: #f7f7f7;
-  color: #333;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  background-color: #f1e3d3;
+  color: #4e342e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
-button:hover {
-  background-color: #e0e0e0;
-  transform: scale(1.05);
-}
-
-/* Operator buttons */
-.operator {
-  background: linear-gradient(145deg, #ffe082, #ffcc80);
-  color: #3e2723;
-}
-
-.operator:hover {
-  background: linear-gradient(145deg, #ffd54f, #ffb74d);
-}
-
-/* Equal button */
-.equal {
-  background: linear-gradient(145deg, #66bb6a, #43a047);
-  color: white;
-}
-
-.equal:hover {
-  background: linear-gradient(145deg, #4caf50, #388e3c);
-}
-
-/* Clear button (full width) */
-.clear {
-  grid-column: span 4;
-  background: linear-gradient(145deg, #ef5350, #e53935);
-  color: white;
-}
-
-.clear:hover {
-  background: linear-gradient(145deg, #e53935, #c62828);
-}
+button:hov
